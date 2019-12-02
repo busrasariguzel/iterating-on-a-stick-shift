@@ -20,23 +20,28 @@ const makeSingular = function(dino) {
     extinct: dino['extinct'],
 }
 }
-}
+
+// const { species, period, carnivore, extinct} = dinosaur;
+// const newDino = makeDino(species, period, carnivore, extinct);
+// if (species.endsWith('us')) {
+//   newDino.species=species.slice(0, -2);
+// }
+// return newDino
+// }
 const truncateSpecies = function(dino) {
   if (dino['species'].length < 11) {
     return dino
   }
   else {
   
-      const truncatedDino = {
+      return truncatedDino = {
       species: dino['species'].slice(0,7) + '...',
       period: dino['period'],
       carnivore: dino['carnivore'],
       extinct: dino['extinct'],
       
   }
-  return truncatedDino
   }
-
 }
 
 const makeExtinct = function(dino) {
